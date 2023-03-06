@@ -1,0 +1,30 @@
+- name: Introduction
+  href: intro.md
+
+- name: Design Patterns
+  href: patterns.md
+  items:
+    - name: Singleton
+      href: singleton.md
+    - name: Observateur
+      href: observer.md
+    - name: Commande
+      href: command.md
+
+- name: Animation
+  href: tweens.md
+
+- name: Audio
+  href: audio.md
+
+- name: Base de données
+  href: database.md
+  
+- name: Interface utilisateur
+  href: ui.md
+
+- name: Outils pour GameObject
+  href: gameobject.md
+
+- name: Outils pour l'éditeur
+  href: editor.md

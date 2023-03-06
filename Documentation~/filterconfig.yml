@@ -1,0 +1,21 @@
+﻿apiRules:
+  - exclude:
+      uidRegex: ^GGL\.Editor
+  - exclude:
+      uidRegex: ^GGL\.ExcludeFromDocFxAttribute
+      type: Type
+  - exclude:
+      uidRegex: ^GGL\.Settings
+      type: Type
+  - exclude:
+      uidRegex: ^GGL\.DB\.Scriptable\.ScriptableDataDeleteDetector
+      type: Type
+  - exclude:
+      uidRegex: ^System
+  - exclude:
+      uidRegex: ^UnityEngine
+  - exclude:
+      uidRegex: ^Newtonsoft.Json.Serialization
+  - exclude:
+      hasAttribute:
+        uid: GGL.ExcludeFromDocFxAttribute

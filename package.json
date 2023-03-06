@@ -1,0 +1,25 @@
+{
+	"name": "com.yoannhaffner.ggl",
+	"version": "1.0.0",
+	"displayName": "GG-Library",
+	"description": "This Unity/C# library offers tools, extensions and design patterns that will help you design efficiently well optimised games based on SOLID principles",
+	"unity": "2022.2",
+	"unityRelease": "6f1",
+	"documentationUrl": "https://ggl.yoannhaffner.com",
+	"dependencies": {
+		"com.unity.editorcoroutines": "1.0.0",
+		"es.jacksparrot.dotween": "1.0.0",
+		"com.unity.nuget.newtonsoft-json": "3.0.2",
+		"com.dbrizov.naughtyattributes": "2.1.4"
+	},
+	"keywords": [
+		"library",
+		"design patterns",
+		"tools"
+	],
+	"author": {
+		"name": "Yoann HAFFNER",
+		"email": "contact@yoannhaffner.com",
+		"url": "https://yoannhaffner.com"
+	}
+}
