@@ -77,12 +77,6 @@ namespace GGL.UI
             content.OnCloseAnimFinished.RemoveListener(FinalizeLoading);
         }
 
-        
-        /// Act like if another scene was being loaded.
-        /// <inheritdoc cref="MonoBehaviour"/>
-        [ExcludeFromDocFx]
-        protected virtual void Start() => StartCoroutine(EPostLoadEvents());
-
 
         /// <summary>
         /// Loads a new scene after fading on the canvas
