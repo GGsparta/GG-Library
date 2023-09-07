@@ -30,7 +30,7 @@ namespace GGL.UI
         [SerializeField] private float minDuration;
         
         /// <value>
-        /// Load duration can vary and be hard to tell to the user. Compense here so that te pourcentage can be reliable
+        /// Load duration can vary and be hard to tell to the user. Compense here so that the pourcentage can be reliable
         /// </value>
         [MinMaxSlider(0f, 1f)]
         [SerializeField] private Vector2 sceneLoadingProportion = new(0.1f, 0.9f);

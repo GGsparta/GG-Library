@@ -3,11 +3,13 @@
 ---
 
 Le module `DB` inclus propose les fonctionnalités suivantes:
-- **Ajouter et supprimer des données** ;
 - **Définir des données par défaut** en tant que Scriptable ;
 - **Persister les données** en les sauvegardant sur l'ordinateur.
 
 Un simple accès au singleton [`Database`](/api/GGL.DB.Database.html) suffit à charger toutes les données !
+
+> [!IMPORTANT]
+> Dans une mise à jour future, il sera également possible de supprimer les données. Oui... c'est pas encore là.
 
 ## Déclaration des données
 
