@@ -30,7 +30,7 @@ namespace GGL.UI
         [SerializeField] private float minDuration;
         
         /// <value>
-        /// Load duration can vary and be hard to tell to the user. Compense here so that te pourcentage can be reliable
+        /// Load duration can vary and be hard to tell to the user. Compense here so that the pourcentage can be reliable
         /// </value>
         [MinMaxSlider(0f, 1f)]
         [SerializeField] private Vector2 sceneLoadingProportion = new(0.1f, 0.9f);
@@ -76,12 +76,6 @@ namespace GGL.UI
             content.OnOpenAnimFinished.RemoveListener(LaunchLoading);
             content.OnCloseAnimFinished.RemoveListener(FinalizeLoading);
         }
-
-        
-        /// Act like if another scene was being loaded.
-        /// <inheritdoc cref="MonoBehaviour"/>
-        [ExcludeFromDocFx]
-        protected virtual void Start() => StartCoroutine(EPostLoadEvents());
 
 
         /// <summary>
