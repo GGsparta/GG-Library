@@ -161,14 +161,17 @@ namespace GGL.UI.Window
             }
             else
             {
+                Action finalize = null;
                 switch (transition)
                 {
                     case Transition.SCALE:
                         transform.localScale = _scaleZero;
+                        finalize = () => transform.localScale = Vector3.one;
                         _tweener = transform.DOScale(Vector3.one, transitionDuration);
                         break;
                     case Transition.FADE:
                         Canvas.alpha = 0;
+                        finalize = () => Canvas.alpha = 1;
                         _tweener = Canvas.DOFade(1, transitionDuration);
                         break;
                     default:
@@ -185,6 +188,7 @@ namespace GGL.UI.Window
                         {
                             OnOpenFinished(); 
                             _tweener.Pause();
+                            finalize?.Invoke();
                         }
                         else
                         {
