@@ -31,7 +31,7 @@ namespace GGL.Editor
                 HEADER_HEIGHT = 35,
                 BOTTOM_PADDING = 16;
 
-            GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height), new GUIStyle
+            GUILayout.BeginArea(new Rect(0, 0, position.width, position.height), new GUIStyle
             {
                 normal = new GUIStyleState
                 {
@@ -39,7 +39,7 @@ namespace GGL.Editor
                 }
             });
 
-            GUILayout.BeginArea(new Rect(0, 0, Screen.width, HEADER_HEIGHT));
+            GUILayout.BeginArea(new Rect(0, 0, position.width, HEADER_HEIGHT));
             GUILayout.BeginHorizontal();
             GUILayout.Box(new GUIContent(_icon.texture), new GUIStyle
             {
@@ -65,7 +65,7 @@ namespace GGL.Editor
 
             Vector2
                 pos = new(0, HEADER_HEIGHT),
-                size = new(Screen.width, Screen.height - HEADER_HEIGHT - BOTTOM_PADDING);
+                size = new(position.width, position.height - HEADER_HEIGHT - BOTTOM_PADDING);
             GUILayout.BeginArea(
                 new Rect(pos, size),
                 new GUIStyle
