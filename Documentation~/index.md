@@ -1,4 +1,4 @@
-# GG-Library 1.0.0
+# GG-Library 1.0.1
 
 La bibliothèque *GG-Library* propose des outils, extensions et patrons de programmation en C# afin de créer rapidement des jeux optimisés sur Unity suivant les principes SOLID.
 
@@ -17,7 +17,7 @@ Dans le fichier ``Packages/manifest.json`` de votre projet Unity, ajouter les li
     [...]
     "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
     "es.jacksparrot.dotween": "https://github.com/JackSParrot/dotween-pkg.git",
-    "com.yoannhaffner.ggl": "https://github.com/GGsparta/GG-Library.git#1.0.0"
+    "com.yoannhaffner.ggl": "https://github.com/GGsparta/GG-Library.git#1.0.1"
   }
 }
 ```
