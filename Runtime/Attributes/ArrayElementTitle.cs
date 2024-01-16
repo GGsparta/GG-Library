@@ -36,8 +36,10 @@ namespace GGL.Attributes
                                   SerializedProperty property,
                                   GUIContent label)
         {
-            string FullPathName = property.propertyPath + "." + Atribute.Varname;
+            string FullPathName = $"{property.propertyPath}.{Atribute.Varname}";
+            string FullPathGeneratedName = $"{property.propertyPath}.<{Atribute.Varname}>k__BackingField"; // Auto-property fields
             TitleNameProp = property.serializedObject.FindProperty(FullPathName);
+            TitleNameProp ??= property.serializedObject.FindProperty(FullPathGeneratedName);
             string newlabel = GetTitle();
             if (string.IsNullOrEmpty(newlabel))
                 newlabel = label.text;
