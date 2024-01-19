@@ -14,7 +14,7 @@ namespace GGL.Components
         /// Kill the app.
         /// </summary>
         /// <remarks>Does not work on WebGL.</remarks>
-        public void Kill()
+        public static void Kill()
         {
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
