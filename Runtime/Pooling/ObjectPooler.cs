@@ -173,7 +173,12 @@ namespace GGL.Pooling
         }
 
 
-        private static GameObject Pool_CreateGO(GameObject prefab) => Object.Instantiate(prefab, _parentBuffer);
+        private static GameObject Pool_CreateGO(GameObject prefab)
+        {
+            GameObject go = Object.Instantiate(prefab, _parentBuffer);
+            go.name = prefab.name;
+            return go;
+        }
 
         private static void Pool_PrepareGO(GameObject item, GameObject prefab)
         {
