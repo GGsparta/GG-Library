@@ -17,11 +17,11 @@ namespace GGL.UI.Window
 
         /// <inheritdoc cref="MonoBehaviour"/>
         [ExcludeFromDocFx]
-        protected virtual void OnEnable() => background.onClick.AddListener(Close);
+        protected virtual void OnEnable() => background?.onClick.AddListener(Close);
         
         /// <inheritdoc cref="MonoBehaviour"/>
         [ExcludeFromDocFx]
-        protected virtual void OnDisable() => background.onClick.RemoveListener(Close);
+        protected virtual void OnDisable() => background?.onClick.RemoveListener(Close);
 
         /// <summary>
         /// Show the background after the method <see cref="Window.Open"/> is called.
@@ -29,6 +29,8 @@ namespace GGL.UI.Window
         protected override void OnOpen()
         {
             base.OnOpen();
+            
+            if(!background) return;
             
             // Show a beautiful background
             Color bgColor = Color.black;
@@ -46,6 +48,8 @@ namespace GGL.UI.Window
         protected override void OnClose()
         {
             base.OnClose();
+            
+            if(!background) return;
             
             // Hide the beautiful background
             background.interactable = false;
